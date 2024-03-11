@@ -33,3 +33,11 @@ Object.getPrototypeOf(Playerx.prototype) === Object.prototype; // true
 
 // Output may slightly differ based on the browser
 console.log(player1.valueOf()); // Output: Object { name: "steve", marker: "X", sayName: sayName() }
+
+console.log(player1.hasOwnProperty('valueOf')); // false
+console.log(Object.prototype.hasOwnProperty('valueOf')); // true
+console.log(Playerx.hasOwnProperty('sayHello')); // false
+console.log(Playerx.hasOwnProperty('sayName')); // false
+console.log(player1.hasOwnProperty('sayName')); // true
+console.log(player1.hasOwnProperty('sayHello')); // true
+console.log(Playerx.hasOwnProperty('name')); // true
