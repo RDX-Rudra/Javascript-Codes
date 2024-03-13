@@ -17,6 +17,11 @@ function Book(title, author, pages) {
     };
 }
 
+const myLibrary = [];
+function addBookToLibrary(Book){
+
+}
+
 const theHobbit = new Book('theHobbit', 'J.R.R. Tolkien', 295);
 theHobbit.info();
 theHobbit.pages = 300;
