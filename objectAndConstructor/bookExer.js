@@ -19,7 +19,7 @@ function Book(title, author, pages) {
 
 const myLibrary = [];
 function addBookToLibrary(Book){
-
+    myLibrary.push(Book);
 }
 
 const theHobbit = new Book('theHobbit', 'J.R.R. Tolkien', 295);
@@ -27,3 +27,8 @@ theHobbit.info();
 theHobbit.pages = 300;
 theHobbit.toggleRead(); // Mark the book as read
 theHobbit.info();
+addBookToLibrary(theHobbit);
+console.log(myLibrary);
+const DSA = new Book('dsa', 'N. Karnmanchi', 650);
+addBookToLibrary(DSA);
+console.log(myLibrary);
